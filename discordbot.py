@@ -27,7 +27,7 @@ async def on_message(message):
         await message.channel.send ("1등급 4등 2등급 13등 3등급 27등 4등급 48등 5등급 72등 6등급 92등 7등급 106등 8등급 115등 9등급 120등")
     
     if message.content == "!도움말":
-        await message.channel.send ("! 뒤에 명령어를 적으면 우리 봇친구가 대답해줄거에요! 지금 있는 명령어로는 !안녕, !내신 등급 등이 있습니다!")
+        await message.author.send ("! 뒤에 명령어를 적으면 우리 봇친구가 대답해줄거에요! 지금 있는 명령어로는 !안녕, !내신 등급 등이 있습니다!")
     
 try:
     client.run(TOKEN)
