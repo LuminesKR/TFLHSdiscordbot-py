@@ -10,6 +10,7 @@ PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
+prefix = "!"
 idA, moneyA, timeA = [], [], []
 
 try:
