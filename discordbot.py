@@ -1,8 +1,10 @@
 from cmath import log
 from discord.ext import commands
 from distutils.sysconfig import PREFIX
-import discord, time, random, asyncio, requests, os
+import discord
+import random
 from dotenv import load_dotenv
+import os
 load_dotenv()
 
 
