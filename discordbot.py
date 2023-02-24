@@ -13,6 +13,11 @@ TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
 
+@client.event
+async def on_ready():
+    print(f'Logged in as {client.user}.')
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("대구외고생들과 같이 공부하는중"))
+
 
 @client.event
 async def on_message(message):     
